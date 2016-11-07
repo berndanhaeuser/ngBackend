@@ -1,0 +1,39 @@
+{
+  "name": "medic",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "form": {
+      "type": "string",
+      "required": true
+    },
+    "hersteller": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "takes": {
+      "type": "hasAndBelongsToMany",
+      "model": "take",
+      "foreignKey": ""
+    },
+    "packs": {
+      "type": "hasAndBelongsToMany",
+      "model": "pack",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,39 @@
+{
+  "name": "person",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "birthdayyear": {
+      "type": "number",
+      "required": true
+    },
+    "birthdaymonth": {
+      "type": "number",
+      "required": true
+    },
+    "birthdayday": {
+      "type": "number",
+      "required": true
+    },
+    "email": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "takes": {
+      "type": "hasAndBelongsToMany",
+      "model": "take",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

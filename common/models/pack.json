@@ -1,0 +1,35 @@
+{
+  "name": "pack",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "isopen": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "openedDate": {
+      "type": "date"
+    },
+    "mylabel": {
+      "type": "string",
+      "required": true
+    },
+    "amountleft": {
+      "type": "number",
+      "required": true
+    },
+    "amountStd": {
+      "type": "number",
+      "required": true,
+      "default": 1
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongods": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "playgroundDB",
+    "password": "roland01",
+    "name": "mongods",
+    "user": "admin",
+    "connector": "mongodb"
+  }
+}
