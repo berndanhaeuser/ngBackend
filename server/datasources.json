@@ -8,9 +8,9 @@
     "port": 27017,
     "url": "",
     "database": "playgroundDB",
-    "password": "roland01",
+    "password": "",
     "name": "mongods",
-    "user": "admin",
+    "user": "",
     "connector": "mongodb"
   }
 }
